@@ -31,10 +31,7 @@ func rob(nums []int) int {
 		}
 	}
 
-	if dp[len1-1] >= dp[len1-2] {
-		return dp[len1-1]
-	}
-	return dp[len1-2]
+	return dp[len1-1]
 }
 
 func main() {
